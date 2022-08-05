@@ -1,9 +1,89 @@
 @font-face {
+  font-family: "HeroicCondensedBlack";
+  src: url("fonts/HeroicCondensed-Black.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedBlack";
+  src: url("fonts/HeroicCondensed-Black.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedBlackOblique";
+  src: url("fonts/HeroicCondensed-BlackOblique.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedBold";
+  src: url("fonts/HeroicCondensed-Bold.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedBoldOblique";
+  src: url("fonts/HeroicCondensed-BoldOblique.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedBook";
+  src: url("fonts/HeroicCondensed-Book.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedBookOblique";
+  src: url("fonts/HeroicCondensed-BookOblique.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedHeavy";
+  src: url("fonts/HeroicCondensed-Heavy.otf");
+}
+@font-face {
+  font-family: "HeroicCondensedHeavyOblique";
+  src: url("fonts/HeroicCondensed-HeavyOblique.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedLight";
+  src: url("fonts/HeroicCondensed-Light.otf");
+}
+
+@font-face {
   font-family: "HeroicCondensedMedium";
   src: url("fonts/HeroicCondensed-Medium.otf");
 }
 
+@font-face {
+  font-family: "HeroicCondensedMediumOblique";
+  src: url("fonts/HeroicCondensed-MediumOblique.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedMediumOblique";
+  src: url("fonts/HeroicCondensed-MediumOblique.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedRegular";
+  src: url("fonts/HeroicCondensed-Regular.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedRegularOblique";
+  src: url("fonts/HeroicCondensed-RegularOblique.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedThin";
+  src: url("fonts/HeroicCondensed-Thin.otf");
+}
+
+@font-face {
+  font-family: "HeroicCondensedThinOblique";
+  src: url("fonts/HeroicCondensed-ThinOblique.otf");
+}
+
 header {
+  z-index: 2;
   display: flex;
   background: #001f3f;
   width: 100vw;
@@ -147,10 +227,66 @@ header nav {
   transform: rotate(-405deg);
 }
 
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: auto;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 91vh;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: relative;
+}
+
+.hero h1 {
+  font-family: "HeroicCondensedBold";
+  font-size: 9vw;
+  text-align: center;
+  margin-bottom: -0.2em;
+}
+
+.hero .divider {
+  background-color: #021b99;
+  margin-left: 10vw;
+  width: 50vw;
+  height: 10px;
+}
+
+.hero .top,
+.hero .mid,
+.hero .bot {
+  color: #2bbad9;
+}
+
+.hero span {
+  color: #021b99;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 @media (max-width: 700px) {
   .menu-button-container {
     display: flex;
     margin-right: 0.8em;
+    overflow: hidden;
   }
 
   .menu-button {
@@ -169,7 +305,9 @@ header nav {
     justify-content: flex-start;
 
     align-items: center;
-    overflow: visible;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
     z-index: 2;
   }
 
@@ -206,5 +344,11 @@ header nav {
 
   header .logo-pic {
     margin-left: 0.2em;
+  }
+
+  .hero {
+    /* Sizing */
+    width: 100vw;
+    height: 20vh;
   }
 }
