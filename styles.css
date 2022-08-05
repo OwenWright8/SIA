@@ -261,9 +261,9 @@ header nav {
 
 .hero .divider {
   background-color: #021b99;
-  margin-left: 10vw;
   width: 50vw;
   height: 10px;
+  margin-left: 10vw;
 }
 
 .hero .top,
@@ -354,9 +354,8 @@ main img {
 
   .hero .divider {
     background-color: #021b99;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    width: 50vw;
+    margin-left: 5vw;
+    width: 60vw;
     height: 0.3em;
   }
 }
