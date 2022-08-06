@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="website_creator" content="Owen_Wright" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- default favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- wideley used favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/ico" />
+    <!-- for apple mobile devices -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/favicon.ico"
+      type="image/svg"
+      sizes="152x152"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/favicon.ico"
+      type="image/svg"
+      sizes="120x120"
+    />
+    <title>Contact Us | SIA</title>
+  </head>
+
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      font-size: 18px;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 35vw;
+      background: #fff;
+      padding: 50px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.151);
+      border-radius: 0.5em;
+    }
+
+    .container h1 {
+      color: #2bbad9;
+      font-family: "HeroicCondensedRegular";
+      font-size: 46px;
+      margin: 0 0 30px;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    .container input {
+      outline: none;
+      padding: 15px 15px;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .container label {
+      font-family: "HeroicCondensedThin";
+      color: #cccccc;
+      font-size: 24px;
+    }
+
+    .container textarea {
+      height: 80px;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      resize: none;
+      font-size: 16px;
+    }
+
+    .container input,
+    textarea {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #999;
+    }
+
+    button {
+      background-color: #021b99;
+      font-size: 32px;
+      font-family: "HeroicCondensedBold";
+      outline: none;
+      padding: 15px 30px;
+      margin-bottom: 20px;
+      width: 100%;
+      border-radius: 0.5em;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #031fab;
+    }
+
+    .container form div {
+      position: relative;
+    }
+
+    .container form div label {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      pointer-events: none;
+      color: #999;
+      transition: 0.3s;
+    }
+
+    .container input:focus ~ label,
+    .container textarea:focus ~ label,
+    .container input:valid ~ label,
+    .container textarea:valid ~ label {
+      top: -12px;
+      left: 0;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .container input:focus,
+    .container textarea:focus,
+    .container input:valid,
+    .container textarea:valid {
+      border-bottom: 1px solid black;
+    }
+
+    /* Responsive codes */
+
+    @media only screen and (max-width: 700px) {
+      .container {
+        width: 75vw;
+        padding: 25px;
+      }
+
+      input,
+      textarea,
+      label {
+        font-size: 18px;
+      }
+
+      .container input {
+        width: 65vw;
+      }
+
+      .container textarea {
+        width: 65vw;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <header>
+          <div class="header-wrapper">
+            <a href="home.html" class="logo-name">
+              <div class="logo-pic"><img src="images/sia-logo.webp" /></div>
+            </a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <div class="menu-button"></div>
+            </label>
+            <nav class="menu">
+              <li class="name-one">
+                <span><a href="home.html" class="other">Home</a></span>
+              </li>
+              <li class="name-two">
+                <span><a href="about.html" class="other">About Us</a></span>
+              </li>
+              <li class="name-three">
+                <span><a href="contact.html" class="selected">Contact</a></span>
+              </li>
+              <li class="name-four">
+                <span><a href="blog.html" class="other">Blog</a></span>
+              </li>
+              <li class="name-five">
+                <span
+                  ><a href="threads.html" class="other">Mav Threads</a></span
+                >
+              </li>
+              <li class="name-six">
+                <span><a href="donate.html" class="other">Donate</a></span>
+              </li>
+            </nav>
+          </div>
+        </header>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <form
+          class="contact"
+          method="POST"
+          name="contact"
+          data-netlify="true"
+          netlify
+          action="/success"
+        >
+          <div>
+            <input type="text" name="name" id="" required />
+            <label for="">*Name</label>
+          </div>
+          <div>
+            <input type="email" name="email" id="" required />
+            <label for="">*Email</label>
+          </div>
+          <div>
+            <input type="text" name="subject" id="" required />
+            <label for="">*Subject</label>
+          </div>
+          <div>
+            <textarea required name="message"></textarea>
+            <label for="">*Message</label>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

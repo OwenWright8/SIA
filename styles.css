@@ -111,6 +111,7 @@ header .other:hover {
   padding: 0;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .header-wrapper {
@@ -226,101 +227,6 @@ header nav {
   transform: rotate(-405deg);
 }
 
-.hero {
-  /* Sizing */
-  width: 100vw;
-  height: auto;
-  /* Flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero {
-  /* Sizing */
-  width: 100vw;
-  height: 91vh;
-  /* Flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: relative;
-}
-
-.hero h1 {
-  display: flex;
-  font-family: "HeroicCondensedBold";
-  font-size: 9vw;
-  text-align: center;
-  margin-bottom: -0.2em;
-}
-
-.hero .divider {
-  justify-self: center;
-  align-self: center;
-  background-color: #021b99;
-  width: 50vw;
-  height: 10px;
-}
-
-.hero .top,
-.hero .mid,
-.hero .bot {
-  color: #2bbad9;
-}
-
-.hero span {
-  color: #021b99;
-}
-
-main {
-  height: 1000px;
-}
-
-main img {
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.scroll {
-  position: absolute;
-  z-index: 5;
-  flex-direction: row;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 16px;
-  margin-top: 35em;
-}
-
-.arrow {
-  width: 4em;
-  height: 4em;
-  opacity: 65%;
-}
-
-.scroll button {
-  background-color: #26252500;
-  border: 0;
-}
-
-.scroll button:hover {
-  cursor: pointer;
-}
-
-.hero-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (max-width: 700px) {
   .menu-button-container {
     display: flex;
@@ -383,22 +289,5 @@ main img {
 
   header .logo-pic {
     margin-left: 0.2em;
-  }
-
-  .hero {
-    /* Sizing */
-    width: 100vw;
-    height: 20vh;
-  }
-
-  .hero .divider {
-    background-color: #021b99;
-    margin-left: 5vw;
-    width: 60vw;
-    height: 0.3em;
-  }
-
-  .scroll {
-    display: none;
   }
 }
