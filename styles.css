@@ -253,7 +253,7 @@ header nav {
     overflow: hidden;
     overflow-y: hidden;
     overflow-x: hidden;
-    z-index: 2;
+    z-index: 99;
   }
 
   #menu-toggle ~ .menu li {
@@ -262,14 +262,14 @@ header nav {
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: 2;
+    z-index: 99;
   }
   #menu-toggle:checked ~ .menu li {
     border: 1px solid #fff;
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: 2;
+    z-index: 99;
   }
   .menu > li {
     display: flex;
@@ -280,11 +280,11 @@ header nav {
     width: 100%;
     color: white;
     background-color: #001f3f;
-    z-index: 2;
+    z-index: 99;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
-    z-index: 2;
+    z-index: 99;
   }
 
   header .logo-pic {
