@@ -83,7 +83,7 @@
 }
 
 header {
-  z-index: 2;
+  z-index: 99;
   display: flex;
   background: #001f3f;
   width: 100vw;
