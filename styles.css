@@ -82,6 +82,10 @@
   src: url("fonts/HeroicCondensed-ThinOblique.otf");
 }
 
+body {
+  overflow: visible;
+}
+
 header {
   display: flex;
   background: #001f3f;
@@ -158,7 +162,7 @@ header nav {
   text-align: center;
   display: inline-block;
   position: relative;
-  font-size: 24px;
+  font-size: 32px;
   font-family: "HeroicCondensedMedium";
   font-weight: 400;
 }
@@ -226,6 +230,25 @@ header nav {
   transform: rotate(-405deg);
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  font-family: "HeroicCondensedRegular";
+  grid-area: "footer";
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  z-index: 2;
+  color: #114f74;
+}
+
+footer img {
+  width: 150px;
+  height: 150px;
+}
+
 @media (max-width: 700px) {
   .menu-button-container {
     display: flex;
@@ -284,5 +307,20 @@ header nav {
 
   header .logo-pic {
     margin-left: 0.2em;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    height: 10px;
+    padding: 25px;
+  }
+
+  footer img {
+    width: 100px;
+    height: 100px;
   }
 }

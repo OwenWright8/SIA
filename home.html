@@ -74,10 +74,6 @@
       color: #021b99;
     }
 
-    main {
-      height: 1000px;
-    }
-
     main img {
       max-width: 100%;
       height: auto;
@@ -117,6 +113,81 @@
       align-items: center;
     }
 
+    main .wrapper {
+      display: flex;
+      height: 100vw;
+      width: 100%;
+      background-color: #001f3f;
+      margin-top: -4px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: -175px;
+    }
+
+    main .text-bkg {
+      z-index: 60;
+      height: 40px;
+      width: 60%;
+      background-color: #869cb2;
+    }
+
+    main {
+      flex-wrap: nowrap;
+      background-color: #001f3f;
+    }
+
+    main h1 {
+      z-index: 65;
+      margin-top: -0.75em;
+      font-family: "HeroicCondensedBold";
+      color: white;
+      font-size: 84px;
+    }
+
+    main .button-wrapper img {
+      filter: grayscale(100%);
+      height: 400px;
+      width: 400px;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .button-wrapper {
+      display: flex;
+    }
+
+    .button-wrapper .divider {
+      display: flex;
+      justify-self: center;
+      align-self: center;
+      margin-top: 20px;
+      background-color: #869cb2;
+      width: 60px;
+      height: 95.5%;
+    }
+
+    .left-buttons,
+    .right-buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    .button-wrapper p {
+      position: absolute;
+      font-family: "HeroicCondensedRegular";
+      color: white;
+      font-size: 64px;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+
+    .button-wrapper .lower {
+      margin-top: 475px;
+    }
+
     @media (max-width: 700px) {
       .hero {
         width: 100vw;
@@ -131,6 +202,55 @@
 
       .scroll {
         display: none;
+      }
+
+      main .text-bkg {
+        z-index: 60;
+        height: 1.5em;
+        width: 90%;
+        background-color: #869cb2;
+      }
+
+      main h1 {
+        z-index: 65;
+        font-family: "HeroicCondensedBold";
+        color: white;
+        font-size: 44px;
+      }
+
+      main .button-wrapper img {
+        filter: grayscale(100%);
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+      }
+
+      main .wrapper {
+        margin-top: 20px;
+      }
+
+      .button-wrapper .divider {
+        display: none;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;
+        background-color: #869cb2;
+        width: 60px;
+        height: 95.5%;
+      }
+
+      .button-wrapper p {
+        z-index: 99;
+        position: absolute;
+        font-family: "HeroicCondensedRegular";
+        color: white;
+        font-size: 32px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+      .button-wrapper .lower {
+        margin-top: 190px;
       }
     }
   </style>
@@ -188,7 +308,32 @@
         </div>
       </div>
     </section>
-    <main id="lower"><img src="images/Group-Pic.webp" /></main>
-    <footer></footer>
+    <main id="lower">
+      <img src="images/Group-Pic.webp" />
+      <div class="wrapper">
+        <div class="text-bkg"></div>
+        <h1>SOMETHING FOR EVERYONE</h1>
+        <div class="button-wrapper">
+          <div class="left-buttons">
+            <a href="threads.html"><img src="images/thread-img.webp" /> </a>
+            <p>MAV THREADS</p>
+            <a href="blog.html"><img src="images/event-img.webp" /> </a>
+            <p class="lower">BLOG</p>
+          </div>
+          <div class="center"><div class="divider"></div></div>
+          <div class="right-buttons">
+            <a href="contact.html"><img src="images/contact-img.webp" /> </a>
+            <p>CONTACT US</p>
+
+            <a href="about.html"><img src="images/computer-img.webp" /> </a>
+            <p class="lower">ABOUT US</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="images/footer.png" />
+      <p1 class="footer-wrapper"> McCutcheon, Students In Action </p1>
+    </footer>
   </body>
 </html>
