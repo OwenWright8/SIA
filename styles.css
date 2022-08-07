@@ -153,7 +153,8 @@ header nav {
 .name-three,
 .name-four,
 .name-five,
-.name-six {
+.name-six,
+.name-seven {
   display: flex;
   margin-top: 0.2em;
   flex-wrap: nowrap;
@@ -307,7 +308,8 @@ footer img {
   .name-three,
   .name-four,
   .name-five,
-  .name-six {
+  .name-six,
+  .name-seven {
     font-size: 24px;
   }
 

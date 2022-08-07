@@ -32,13 +32,13 @@
       background-position: center;
       text-align: center;
       width: 100vw;
-      height: 100vh;
+      height: 135vh;
     }
 
     .container {
       z-index: 4;
       position: absolute;
-      top: 56%;
+      top: 73.5%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 35vw;
@@ -82,7 +82,8 @@
     }
 
     .container input,
-    textarea {
+    textarea,
+    select {
       width: 100%;
       outline: none;
       border: none;
@@ -145,7 +146,7 @@
       .container {
         width: 75vw;
         padding: 25px;
-        margin-top: 10vw;
+        margin-top: -15vw;
       }
 
       input,
@@ -186,10 +187,10 @@
                 <span><a href="about.html" class="other">About Us</a></span>
               </li>
               <li class="name-three">
-                <span><a href="contact.html" class="selected">Contact</a></span>
+                <span><a href="contact.html" class="other">Contact</a></span>
               </li>
               <li class="name-four">
-                <span><a href="join.html" class="other">Join</a></span>
+                <span><a href="join.html" class="selected">Join</a></span>
               </li>
               <li class="name-five">
                 <span><a href="blog.html" class="other">Blog</a></span>
@@ -209,7 +210,7 @@
     </header>
     <main>
       <div class="container">
-        <h1>Contact Us</h1>
+        <h1>Join SIA</h1>
         <form
           class="contact"
           method="POST"
@@ -219,20 +220,32 @@
           action="/success"
         >
           <div>
-            <input type="text" name="name" id="" required />
-            <label for="">*Name</label>
+            <input type="text" name="first-name" id="" required />
+            <label for="">*First Name</label>
+          </div>
+          <div>
+            <input type="text" name="last-name" id="" required />
+            <label for="">*Last Name</label>
+          </div>
+          <div>
+            <input type="number" name="grade" id="" required />
+            <label for="">*Grade</label>
           </div>
           <div>
             <input type="email" name="email" id="" required />
-            <label for="">*Email</label>
-          </div>
-          <div>
-            <input type="text" name="subject" id="" required />
-            <label for="">*Subject</label>
+            <label for="">*School Email</label>
           </div>
           <div>
             <textarea required name="message"></textarea>
-            <label for="">*Message</label>
+            <label for="">*Why are you interested in SIA?</label>
+          </div>
+          <div>
+            <textarea required name="help"></textarea>
+            <label for="">*What do you want to help with?</label>
+          </div>
+          <div>
+            <input required name="availability" />
+            <label for="">*What is your availability after school?</label>
           </div>
           <div>
             <button type="submit">Submit</button>

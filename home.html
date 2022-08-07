@@ -190,6 +190,49 @@
       margin-top: 475px;
     }
 
+    .join {
+      display: flex;
+      height: 300px;
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #001f3f;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .join h1 {
+      z-index: 65;
+      margin-top: -2em;
+      font-family: "HeroicCondensedBold";
+      color: white;
+      font-size: 84px;
+    }
+
+    .join .text-bkg {
+      z-index: 60;
+      height: 40px;
+      width: 85%;
+      margin-top: -4.89em;
+      background-color: #869cb2;
+    }
+
+    .join a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      background-color: white;
+      color: #021b99;
+      margin-top: 2em;
+      width: 40%;
+      height: 20%;
+      border-radius: 20px;
+      font-family: "HeroicCondensedRegular";
+      font-size: 32px;
+    }
+
     @media (max-width: 700px) {
       .hero {
         width: 100vw;
@@ -206,7 +249,8 @@
         display: none;
       }
 
-      main .text-bkg {
+      main .text-bkg,
+      .join .text-bkg {
         z-index: 60;
         height: 1.5em;
         width: 90%;
@@ -251,8 +295,52 @@
         margin-left: 20px;
       }
 
+      .join {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #001f3f;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .join .text-bkg {
+        z-index: 60;
+        height: 15px;
+        width: 85%;
+        margin-top: -1.75em;
+        background-color: #869cb2;
+      }
+
       .button-wrapper .lower {
         margin-top: 190px;
+      }
+
+      .join h1 {
+        z-index: 65;
+        margin-top: -2.5em;
+        font-family: "HeroicCondensedBold";
+        color: white;
+        font-size: 28px;
+      }
+
+      .join a {
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        background-color: white;
+        color: #021b99;
+        margin-top: 2em;
+        width: 60%;
+        height: 65%;
+        border-radius: 20px;
+        font-family: "HeroicCondensedRegular";
+        font-size: 24px;
       }
     }
   </style>
@@ -280,14 +368,17 @@
                 <span><a href="contact.html" class="other">Contact</a></span>
               </li>
               <li class="name-four">
-                <span><a href="blog.html" class="other">Blog</a></span>
+                <span><a href="join.html" class="other">Join</a></span>
               </li>
               <li class="name-five">
+                <span><a href="blog.html" class="other">Blog</a></span>
+              </li>
+              <li class="name-six">
                 <span
                   ><a href="threads.html" class="other">Mav Threads</a></span
                 >
               </li>
-              <li class="name-six">
+              <li class="name-seven">
                 <span><a href="donate.html" class="other">Donate</a></span>
               </li>
             </nav>
@@ -331,6 +422,11 @@
             <p class="lower">ABOUT US</p>
           </div>
         </div>
+      </div>
+      <div class="join">
+        <h1>INTERESTED IN JOINING STUDENTS IN ACTION?</h1>
+        <div class="text-bkg"></div>
+        <a href="join.html">Click here</a>
       </div>
     </main>
     <footer>
